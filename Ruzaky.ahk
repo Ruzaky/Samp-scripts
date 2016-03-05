@@ -41,7 +41,7 @@ Zona:=CalculateZone(o[1],o[2],o[3])
 
 if(Zona!="Unbekannt")
 SendChat("/r 10-34 " Zona)
-else addchatmessage("Вы находитесь не в Сан-Фиерро")
+else addchatmessage("Г‚Г» Г­Г ГµГ®Г¤ГЁГІГҐГ±Гј Г­ГҐ Гў Г‘Г Г­-Г”ГЁГҐГ°Г°Г®")
 Return
 
 
@@ -51,12 +51,12 @@ if(sbros==0 and su!=-1)
 {
 Zona:=GetZona()
 if(Zona!="Unbekannt" and M!="")
-SendChat("/r 10-16 " Zona " Марка т/с: " M " Номера AB" su "C")
+SendChat("/r 10-16 " Zona " ГЊГ Г°ГЄГ  ГІ/Г±: " M " ГЌГ®Г¬ГҐГ°Г  AB" su "C")
 if(Zona=="Unbekannt")
-addchatmessage("Вы находитесь не в штате СА.")
+addchatmessage("Г‚Г» Г­Г ГµГ®Г¤ГЁГІГҐГ±Гј Г­ГҐ Гў ГёГІГ ГІГҐ Г‘ГЂ.")
 }
 else
-addchatmessage("Сначала направьте визир на нарушителя.")
+addchatmessage("Г‘Г­Г Г·Г Г«Г  Г­Г ГЇГ°Г ГўГјГІГҐ ГўГЁГ§ГЁГ° Г­Г  Г­Г Г°ГіГёГЁГІГҐГ«Гї.")
 Return
 
 
@@ -104,10 +104,10 @@ if(k==0)
 {
 
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Имя фамилия водителя: {F63939}" N " [" kid[0]"]" )
-addChatMessage("{FFFFFF}Скорость автомобиля: {F63939}" Speed " Км/ч"  )
-addChatMessage("{FFFFFF}Т/С: {F63939}" M )
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї ГўГ®Г¤ГЁГІГҐГ«Гї: {F63939}" N " [" kid[0]"]" )
+addChatMessage("{FFFFFF}Г‘ГЄГ®Г°Г®Г±ГІГј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї: {F63939}" Speed " ГЉГ¬/Г·"  )
+addChatMessage("{FFFFFF}Г’/Г‘: {F63939}" M )
 addChatMessage("{F63939} ________________________________________"  )
 su:=kid[0]
 sbros:=0
@@ -116,11 +116,11 @@ else
 {
 k:=0
 addChatMessage("{F63939} ____________________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Error: {F63939}Выберите водителя машины" )
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Error: {F63939}Г‚Г»ГЎГҐГ°ГЁГІГҐ ГўГ®Г¤ГЁГІГҐГ«Гї Г¬Г ГёГЁГ­Г»" )
 While(k<4)
 { 
-addChatMessage("{FFFFFF}Имя фамилия: {F63939}"k+1 " " getPlayerNameById(kid[k])" ["kid[k]"]" )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї: {F63939}"k+1 " " getPlayerNameById(kid[k])" ["kid[k]"]" )
 k++
 }
 addChatMessage("{F63939} ____________________________________________________"  )
@@ -129,16 +129,16 @@ addChatMessage("{F63939} ____________________________________________________"  
 else
 {
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Error: {F63939}   Слишком далеко" )
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Error: {F63939}   Г‘Г«ГЁГёГЄГ®Г¬ Г¤Г Г«ГҐГЄГ®" )
 addChatMessage("{F63939} ________________________________________"  )
 }
 }
 else
 {
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Error: {F63939}    Т/С не обнаружено" )
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Error: {F63939}    Г’/Г‘ Г­ГҐ Г®ГЎГ­Г Г°ГіГ¦ГҐГ­Г®" )
 addChatMessage("{F63939} ________________________________________"  )
 }
 Return
@@ -147,10 +147,10 @@ numpad1::
 if(k>0)
 {
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Имя фамилия водителя: {F63939}" getPlayerNameById(kid[0])" [" kid[0]"]" )
-addChatMessage("{FFFFFF}Скорость автомобиля: {F63939}" Speed " Км/ч"  )
-addChatMessage("{FFFFFF}Т/С: {F63939}" M)
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї ГўГ®Г¤ГЁГІГҐГ«Гї: {F63939}" getPlayerNameById(kid[0])" [" kid[0]"]" )
+addChatMessage("{FFFFFF}Г‘ГЄГ®Г°Г®Г±ГІГј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї: {F63939}" Speed " ГЉГ¬/Г·"  )
+addChatMessage("{FFFFFF}Г’/Г‘: {F63939}" M)
 addChatMessage("{F63939} ________________________________________"  )
 sbros:=0
 su:=kid[0]
@@ -162,10 +162,10 @@ if(k>0)
 {
 
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Имя фамилия водителя: {F63939}" getPlayerNameById(kid[1])" [" kid[1]"]" )
-addChatMessage("{FFFFFF}Скорость автомобиля: {F63939}" Speed " Км/ч" )
-addChatMessage("{FFFFFF}Т/С: {F63939}" M)
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї ГўГ®Г¤ГЁГІГҐГ«Гї: {F63939}" getPlayerNameById(kid[1])" [" kid[1]"]" )
+addChatMessage("{FFFFFF}Г‘ГЄГ®Г°Г®Г±ГІГј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї: {F63939}" Speed " ГЉГ¬/Г·" )
+addChatMessage("{FFFFFF}Г’/Г‘: {F63939}" M)
 addChatMessage("{F63939} ________________________________________"  )
 sbros:=0
 su:=kid[1]
@@ -177,10 +177,10 @@ if(k>0)
 {
 
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Имя фамилия водителя: {F63939}" getPlayerNameById(kid[2])" [" kid[2]"]" )
-addChatMessage("{FFFFFF}Скорость автомобиля: {F63939}" Speed " Км/ч" )
-addChatMessage("{FFFFFF}Т/С: {F63939}" M)
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї ГўГ®Г¤ГЁГІГҐГ«Гї: {F63939}" getPlayerNameById(kid[2])" [" kid[2]"]" )
+addChatMessage("{FFFFFF}Г‘ГЄГ®Г°Г®Г±ГІГј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї: {F63939}" Speed " ГЉГ¬/Г·" )
+addChatMessage("{FFFFFF}Г’/Г‘: {F63939}" M)
 addChatMessage("{F63939} ________________________________________"  )
 sbros:=0
 su:=kid[2]
@@ -192,10 +192,10 @@ if(k>0)
 {
 
 addChatMessage("{F63939} ________________________________________"  )
-addChatMessage("{F63939}                 Адский радар: ВИЗИР 2"  )
-addChatMessage("{FFFFFF}Имя фамилия водителя: {F63939}" getPlayerNameById(kid[3])" [" kid[3]"]" )
-addChatMessage("{FFFFFF}Скорость автомобиля: {F63939}" Speed " Км/ч" )
-addChatMessage("{FFFFFF}Т/С: {F63939}" M)
+addChatMessage("{F63939}                 ГЂГ¤Г±ГЄГЁГ© Г°Г Г¤Г Г°: Г‚Г€Г‡Г€Гђ 2"  )
+addChatMessage("{FFFFFF}Г€Г¬Гї ГґГ Г¬ГЁГ«ГЁГї ГўГ®Г¤ГЁГІГҐГ«Гї: {F63939}" getPlayerNameById(kid[3])" [" kid[3]"]" )
+addChatMessage("{FFFFFF}Г‘ГЄГ®Г°Г®Г±ГІГј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї: {F63939}" Speed " ГЉГ¬/Г·" )
+addChatMessage("{FFFFFF}Г’/Г‘: {F63939}" M)
 addChatMessage("{F63939} ________________________________________"  )
 sbros:=0
 su:=kid[3]
@@ -206,7 +206,7 @@ Return
 NumpadSub::
 if (su!="-1")
 {
-SendChat("/su " su " Неподчинение, попытка скрыться")
+SendChat("/su " su " ГЌГҐГЇГ®Г¤Г·ГЁГ­ГҐГ­ГЁГҐ, ГЇГ®ГЇГ»ГІГЄГ  Г±ГЄГ°Г»ГІГјГ±Гї")
 
 }
 Return
@@ -221,9 +221,9 @@ Return
 o1:=Object()    
 o1:=GetCoordinates()
 targ:=getIdByPed(getTargetPed())
-if (targ!="-1" and getDist(o1,getPedCoordinates(targ))<21)
+if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<21)
 {
-SendChat("/su " targ " Вооруженное нападение")
+SendChat("/su " targ " Г‚Г®Г®Г°ГіГ¦ГҐГ­Г­Г®ГҐ Г­Г ГЇГ Г¤ГҐГ­ГЁГҐ")
 } 
 else 
 {
@@ -232,20 +232,20 @@ elapsed_time := A_TickCount - start_time3
 if(elapsed_time>30000)
 { 
 start_time3 := A_TickCount
-SendChat("/s Брось оружие! Стрелять буду!")
+SendChat("/s ГЃГ°Г®Г±Гј Г®Г°ГіГ¦ГЁГҐ! Г‘ГІГ°ГҐГ«ГїГІГј ГЎГіГ¤Гі!")
 ghs3:=1
 }
 else
 {
 if(ghs3==1)
 {
-SendChat("/s Оружие на пол я сказал!")
+SendChat("/s ГЋГ°ГіГ¦ГЁГҐ Г­Г  ГЇГ®Г« Гї Г±ГЄГ Г§Г Г«!")
 ghs3:=2
 }
 else
 if(ghs3==2)
 {
-SendChat("/s Стреляю на поражение! Всем лежать!")
+SendChat("/s Г‘ГІГ°ГҐГ«ГїГѕ Г­Г  ГЇГ®Г°Г Г¦ГҐГ­ГЁГҐ! Г‚Г±ГҐГ¬ Г«ГҐГ¦Г ГІГј!")
 ghs3:=0
 }
 }
@@ -291,13 +291,13 @@ Return
 o1:=Object()    
 o1:=GetCoordinates()
 targ:=getIdByPed(getTargetPed())
-if (targ!="-1" and getDist(o1,getPedCoordinates(targ))<21)
+if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<21)
 {
-SendChat("/su " targ " Неподчинение, попытка скрыться")
+SendChat("/su " targ " ГЌГҐГЇГ®Г¤Г·ГЁГ­ГҐГ­ГЁГҐ, ГЇГ®ГЇГ»ГІГЄГ  Г±ГЄГ°Г»ГІГјГ±Гї")
 } 
 else 
 {
-SendChat("/s Стой, стрелять буду!")
+SendChat("/s Г‘ГІГ®Г©, Г±ГІГ°ГҐГ«ГїГІГј ГЎГіГ¤Гі!")
 
 }
 Return
@@ -308,14 +308,14 @@ if (targ!="-1")
 {
 SendChat("/cput "targ)
 sleep 1200
-SendChat("/me посадил преступника в машину")
+SendChat("/me ГЇГ®Г±Г Г¤ГЁГ« ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ  Гў Г¬Г ГёГЁГ­Гі")
 }
 else
 {
 targ:=getClosestPlayerId()
 SendChat("/cput "targ)
 sleep 1200
-SendChat("/me посадил преступника в машину")
+SendChat("/me ГЇГ®Г±Г Г¤ГЁГ« ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ  Гў Г¬Г ГёГЁГ­Гі")
 } 
 Return
 
@@ -329,21 +329,21 @@ elapsed_time := A_TickCount - start_time
 if(elapsed_time>60000)
 { 
 start_time := A_TickCount
-SendChat("/m [SFPD] Водитель автомобиля " M ". Прижмитесь к обочине и остановите ваше транспортное средство!")
+SendChat("/m [SFPD] Г‚Г®Г¤ГЁГІГҐГ«Гј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї " M ". ГЏГ°ГЁГ¦Г¬ГЁГІГҐГ±Гј ГЄ Г®ГЎГ®Г·ГЁГ­ГҐ ГЁ Г®Г±ГІГ Г­Г®ГўГЁГІГҐ ГўГ ГёГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®ГҐ Г±Г°ГҐГ¤Г±ГІГўГ®!")
 gh:=1
 }
 else
 {
 if(gh==1)
 {
-SendChat("/m [SFPD] Повторяю, водитель автомобиля " M ". Принять вправо и остановиться.")
+SendChat("/m [SFPD] ГЏГ®ГўГІГ®Г°ГїГѕ, ГўГ®Г¤ГЁГІГҐГ«Гј Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї " M ". ГЏГ°ГЁГ­ГїГІГј ГўГЇГ°Г ГўГ® ГЁ Г®Г±ГІГ Г­Г®ГўГЁГІГјГ±Гї.")
 gh:=2
 roz:=-1
 }
 else
 if(gh==2)
 {
-SendChat("/m [SFPD] Последнее предупреждение. К обочине, иначе буду стрелять!")
+SendChat("/m [SFPD] ГЏГ®Г±Г«ГҐГ¤Г­ГҐГҐ ГЇГ°ГҐГ¤ГіГЇГ°ГҐГ¦Г¤ГҐГ­ГЁГҐ. ГЉ Г®ГЎГ®Г·ГЁГ­ГҐ, ГЁГ­Г Г·ГҐ ГЎГіГ¤Гі Г±ГІГ°ГҐГ«ГїГІГј!")
 gh:=0
 }
 }  
@@ -355,21 +355,21 @@ if(elapsed_time>60000)
 { 
 start_time := A_TickCount
 
-SendChat("/m [SFPD]Водитель, прижмитесь к обочине и остановите ваше транспортное средство!")
+SendChat("/m [SFPD]Г‚Г®Г¤ГЁГІГҐГ«Гј, ГЇГ°ГЁГ¦Г¬ГЁГІГҐГ±Гј ГЄ Г®ГЎГ®Г·ГЁГ­ГҐ ГЁ Г®Г±ГІГ Г­Г®ГўГЁГІГҐ ГўГ ГёГҐ ГІГ°Г Г­Г±ГЇГ®Г°ГІГ­Г®ГҐ Г±Г°ГҐГ¤Г±ГІГўГ®!")
 gh:=1
 }
 else
 {
 if(gh==1)
 {
-SendChat("/m [SFPD] Повторяю, водитель. Принять вправо и остановиться.")
+SendChat("/m [SFPD] ГЏГ®ГўГІГ®Г°ГїГѕ, ГўГ®Г¤ГЁГІГҐГ«Гј. ГЏГ°ГЁГ­ГїГІГј ГўГЇГ°Г ГўГ® ГЁ Г®Г±ГІГ Г­Г®ГўГЁГІГјГ±Гї.")
 gh:=2
 
 }
 else
 if(gh==2)
 {
-SendChat("/m [SFPD] Последнее предупреждение. К обочине, иначе буду стрелять!")
+SendChat("/m [SFPD] ГЏГ®Г±Г«ГҐГ¤Г­ГҐГҐ ГЇГ°ГҐГ¤ГіГЇГ°ГҐГ¦Г¤ГҐГ­ГЁГҐ. ГЉ Г®ГЎГ®Г·ГЁГ­ГҐ, ГЁГ­Г Г·ГҐ ГЎГіГ¤Гі Г±ГІГ°ГҐГ«ГїГІГј!")
 gh:=0
 }
 }
@@ -384,20 +384,20 @@ elapsed_time := A_TickCount - start_time1
 if(elapsed_time>30000)
 { 
 start_time1 := A_TickCount
-Sendchat("/s Немедленно выйдите из машины!")
+Sendchat("/s ГЌГҐГ¬ГҐГ¤Г«ГҐГ­Г­Г® ГўГ»Г©Г¤ГЁГІГҐ ГЁГ§ Г¬Г ГёГЁГ­Г»!")
 ghs:=1
 }
 else
 {
 if(ghs==1)
 {
-SendChat("/s Считаю до трех!")
+SendChat("/s Г‘Г·ГЁГІГ Гѕ Г¤Г® ГІГ°ГҐГµ!")
 ghs:=2
 }
 else
 if(ghs==2)
 {
-SendChat("/s Три!")
+SendChat("/s Г’Г°ГЁ!")
 ghs:=0
 
 }
@@ -409,12 +409,12 @@ numpad9::
 id4:=getClosestPlayerId()
 if (id4!="-1")
 {
-Sendchat("/me выбил стекло автомобиля и вытащил преступника из машины")
+Sendchat("/me ГўГ»ГЎГЁГ« Г±ГІГҐГЄГ«Г® Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї ГЁ ГўГ»ГІГ Г№ГЁГ« ГЇГ°ГҐГ±ГІГіГЇГ­ГЁГЄГ  ГЁГ§ Г¬Г ГёГЁГ­Г»")
 sleep 1300
 Sendchat("/deject "id4)
 } 
 else
-addchatmessage("Никого рядом нет")
+addchatmessage("ГЌГЁГЄГ®ГЈГ® Г°ГїГ¤Г®Г¬ Г­ГҐГІ")
 return
 
 
@@ -424,7 +424,7 @@ Sbros:=1
 su:=-1
 k:=0
 start_time:=0
-addchatmessage("Цель сброшена")
+addchatmessage("Г–ГҐГ«Гј Г±ГЎГ°Г®ГёГҐГ­Г ")
 Return
 
 
