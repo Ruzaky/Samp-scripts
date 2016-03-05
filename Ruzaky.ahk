@@ -221,7 +221,7 @@ Return
 o1:=Object()    
 o1:=GetCoordinates()
 targ:=getIdByPed(getTargetPed())
-if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<21)
+if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<22)
 {
 SendChat("/su " targ " Âîîðóæåííîå íàïàäåíèå")
 } 
@@ -291,7 +291,7 @@ Return
 o1:=Object()    
 o1:=GetCoordinates()
 targ:=getIdByPed(getTargetPed())
-if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<21)
+if (targ!="-1" and getDist(o1,getPedCoordinates(getPedById(targ)))<22)
 {
 SendChat("/su " targ " Íåïîä÷èíåíèå, ïîïûòêà ñêðûòüñÿ")
 } 
